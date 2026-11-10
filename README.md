@@ -12,7 +12,7 @@ AWS GovCloud were not tested. Run the sandbox checklist in the ByMorning reposit
 ```hcl
 module "bymorning" {
   source  = "bymorning/bymorning/aws"
-  version = "1.3.3"
+  version = "1.3.4"
 
   image           = "ghcr.io/bymorning/bymorning@sha256:<digest>" # pinned by digest; verify it with cosign first
   hostname        = "bymorning.example.com"
@@ -26,6 +26,6 @@ module "bymorning" {
 ```
 
 The Region selects the partition, and GovCloud always uses FIPS endpoints. See
-[the AWS installer guide](https://github.com/bymorning/bymorning/blob/v1.3.3/installers/aws/README.md) for prerequisites,
+[the AWS installer guide](https://github.com/bymorning/bymorning/blob/v1.3.4/installers/aws/README.md) for prerequisites,
 verifying and mirroring the image, first sign-in, upgrades, and removal, and [examples/basic](examples/basic) for a root
 module.
